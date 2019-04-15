@@ -1,0 +1,16 @@
+{
+  "name": "intermed_email_invitation",
+  "version": "1.0.0",
+  "description": "Email Invitation from Intermed",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Babita Bisht",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemailer": "^6.1.0",
+    "nodemailer-express-handlebars": "^3.0.0"
+  }
+}
