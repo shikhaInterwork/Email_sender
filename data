@@ -1,0 +1,23 @@
+ superHeading:'Ranbaxy powered by Intermed' ,
+      subHeading:'kindly click on the link below to register yourself !' ,
+      footerNote:'If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com ' ,
+      link:'interwork.biz'
+
+
+
+       {
+     "superHeading" :"Ranbaxy powered by Intermed" ,
+      "subHeading":"kindly click on the link below to register yourself !" ,
+      "footerNote":"If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com " ,
+      "link":"interwork.biz"
+
+    }
+
+
+     {	"subject" :"Invitation " ,
+     "superHeading" :"Ranbaxy powered by Intermed" ,
+      "subHeading":"kindly click on the link below to register yourself !" ,
+      "footerNote":"If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com " ,
+      "link":"interwork.biz"
+
+    }

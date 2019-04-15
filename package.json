@@ -9,6 +9,7 @@
   "author": "Babita Bisht",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "nodemailer": "^6.1.0",
     "nodemailer-express-handlebars": "^3.0.0"

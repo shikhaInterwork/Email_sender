@@ -3,6 +3,13 @@ const cred =require('./cred/cred')
 var hbs = require('nodemailer-express-handlebars');
 const express=require('express');
 const app= express();
+const bodyParser=require('body-parser')
+
+
+
+//Body Parser middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json())
 
 
 var mailer = nodemailer.createTransport({
@@ -27,19 +34,21 @@ mailer.use('compile' , hbs({
 }))
 
 
-app.get('/sendMail' , (req,res)=>{
+app.post('/sendMail' , (req,res)=>{
+
+  console.log('req.body' , req.body);
 
 
   mailer.sendMail( {
     from: 'belleSolutions2018@gmail.com',
     to: 'babita@interwork.biz',
-    subject: 'Test',
+    subject: req.body.subject,
     template: 'email',
     context: {
-      superHeading:'Ranbaxy powered by Intermed' ,
-      subHeading:'kindly click on the link below to register yourself !' ,
-      footerNote:'If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com ' ,
-      link:'interwork.biz'
+      superHeading:req.body.superHeading ,
+      subHeading:req.body.subHeading ,
+      footerNote:req.body.footerNote ,
+      link:req.body.link
 
     }
  },(err, response)=>{
