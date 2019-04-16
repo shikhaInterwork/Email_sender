@@ -27,7 +27,6 @@ mailer.use('compile' , hbs({
   viewEngine: {
     extName: '.hbs',
     partialsDir: 'views/header',
-
   },
   viewPath : 'views/email' ,
   extname  : '.hbs'
@@ -46,6 +45,7 @@ app.post('/sendMail' , (req,res)=>{
     template: 'email',
     context: {
       superHeading:req.body.superHeading ,
+      message:req.body.message,
       subHeading:req.body.subHeading ,
       footerNote:req.body.footerNote ,
       link:req.body.link

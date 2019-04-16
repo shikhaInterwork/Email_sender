@@ -21,3 +21,12 @@
       "link":"interwork.biz"
 
     }
+
+     {	"subject" :"Invitation " ,
+	"message"  :"Hey there ! Admin (name) invited you to join the  \"Brandname\"  board on Interwork  ",
+     "superHeading" :"Brandname powered by Interwork" ,
+      "subHeading":"kindly click on the link below to register yourself !" ,
+      "footerNote":"If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com " ,
+      "link":"interwork.biz"
+
+    }
