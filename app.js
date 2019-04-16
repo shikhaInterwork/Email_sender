@@ -6,7 +6,6 @@ const app= express();
 const bodyParser=require('body-parser')
 
 
-
 //Body Parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
@@ -34,12 +33,9 @@ mailer.use('compile' , hbs({
 
 
 app.post('/sendMail' , (req,res)=>{
-
   console.log('req.body' , req.body);
-
-
   mailer.sendMail( {
-    from: 'belleSolutions2018@gmail.com',
+    from: 'Admin name <invitation-do-not-reply@interwork.com> ',
     to: 'babita@interwork.biz',
     subject: req.body.subject,
     template: 'email',
@@ -58,15 +54,11 @@ app.post('/sendMail' , (req,res)=>{
     res.send('bad email')
   }else{
     res.send("good email")
-
   }
-
  })
 
-
-
-
 } )
+
 
 
 app.listen('3000' ,()=>{
