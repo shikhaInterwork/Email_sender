@@ -21,19 +21,25 @@ var mailer = nodemailer.createTransport({
   }
 })
 
+
+
+app.post('/sendMail' , (req,res)=>{
+
+
+  console.log('req.body' , req.body);
+console.log(req.body.email_type)
+
+
 mailer.use('compile' , hbs({
   // partialsDir: 'views/header',
   viewEngine: {
     extName: '.hbs',
     partialsDir: 'views/header',
   },
-  viewPath : 'views/email' ,
+  viewPath : 'views/'+req.body.email_type ,
   extname  : '.hbs'
 }))
 
-
-app.post('/sendMail' , (req,res)=>{
-  console.log('req.body' , req.body);
   mailer.sendMail( {
     from: 'Admin name <invitation-do-not-reply@interwork.com> ',
     to: 'babita@interwork.biz',
