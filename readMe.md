@@ -16,9 +16,9 @@ The following are the name of templates :-
 <ol  type="a">
  <li> Confirmation_Email </li>
   <li> Invitation_Email  </li>
-  <li> c) Rejection_Email  </li>
- <li> d) ResetPassword_Email  </li>
-   <li>e) Welcome_Email  </li>
+  <li>  Rejection_Email  </li>
+ <li>  ResetPassword_Email  </li>
+   <li> Welcome_Email  </li>
 </ol>
 
 <p> The application is running on port 3000 </p>
@@ -31,7 +31,7 @@ The body of the endpoint (/sendMail) :-
 <ol type="a">
 
 <li>
-a) In case of  Welcome Email
+ In case of  Welcome Email
 <code>
 {
 	"email_type" :"Welcome_Email",
@@ -45,7 +45,7 @@ a) In case of  Welcome Email
 </code>
  </li>
  <li>
-b) In case of Invitation Email
+ In case of Invitation Email
 <code>
  {	"email_type" :"Invitation_Email",
  	"subject" :"subject of Invitation Email" ,
@@ -56,7 +56,7 @@ b) In case of Invitation Email
 </code>
 </li>
 <li>
-c) In case of Confirmation Email
+ In case of Confirmation Email
 <code>
  {	"email_type" :"Confirmation_Email",
  	"subject" :" subject of confirmation Email" ,
@@ -65,7 +65,7 @@ c) In case of Confirmation Email
  </code>
 </li>
 <li>
-d) In case of  ResetPassword Email
+ In case of  ResetPassword Email
 <code>
  {	"email_type" :"ResetPassword_Email",
  	"subject" :"subject of  ResetPassword Email" ,
@@ -76,7 +76,7 @@ d) In case of  ResetPassword Email
 </code>
  </li>
 <li>
-e) In case of Rejection Email
+ In case of Rejection Email
 <code>
  {	"email_type" :"Rejection_Email",
  	"subject" :" subject of Rejection Email" ,
