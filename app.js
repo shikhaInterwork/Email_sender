@@ -48,7 +48,7 @@ if( req.body.email_type ==='Invitation_Email' ){
 console.log(req.body.length)
 
 let count=Object.keys(req.body).length;
-if(count < 4){
+if(count < 5){
   res.send({
     "success" :false ,
     "message" :"Insufficient information"
@@ -66,7 +66,7 @@ else if( req.body.email_type ==='Welcome_Email' ){
 console.log(req.body.length)
 
 let count=Object.keys(req.body).length;
-if(count < 6){
+if(count < 7){
   res.send({
     "success" :false ,
     "message" :"Insufficient information"
@@ -85,7 +85,7 @@ else if( req.body.email_type ==='Confirmation_Email' ){
 console.log(req.body.length)
 
 let count=Object.keys(req.body).length;
-if(count < 3){
+if(count < 4){
   res.send({
     "success" :false ,
     "message" :"Insufficient information"
@@ -103,7 +103,7 @@ else if( req.body.email_type ==='ResetPassword_Email' ){
 console.log(req.body.length)
 
 let count=Object.keys(req.body).length;
-if(count < 5){
+if(count < 6){
   res.send({
     "success" :false ,
     "message" :"Insufficient information"
@@ -121,7 +121,7 @@ else if( req.body.email_type ==='Rejection_Email' ){
 console.log(req.body.length)
 
 let count=Object.keys(req.body).length;
-if(count < 4){
+if(count < 7){
   res.send({
     "success" :false ,
     "message" :"Insufficient information"
