@@ -33,23 +33,25 @@ The body of the endpoint (/sendMail) :-
 
 <li>
  In case of  Welcome Email
-```
+<code>
 {
 	"email_type" :"Welcome_Email",
  	"subject" :"Subject of Welcome Mail" ,
+	 "receiver" :"receiver" ,
     "username":"jim@123",
     "password" :'1234agdf'
     "brandname" : "BrandABC" ,
     "link"      : "interwork.biz"
 
   }
-``
+</code>
  </li>
  <li>
  In case of Invitation Email
 <code>
  {	"email_type" :"Invitation_Email",
  	"subject" :"subject of Invitation Email" ,
+	 "receiver" :"receiver" ,
  	"admin_name":"admin(name)",
 	"brandname" : "BrandABC" ,
 	"link":"interwork.biz"
@@ -61,6 +63,7 @@ The body of the endpoint (/sendMail) :-
 <code>
  {	"email_type" :"Confirmation_Email",
  	"subject" :" subject of confirmation Email" ,
+	 "receiver" :"receiver",
  	"brandname" : "BrandABC"
  }
  </code>
@@ -70,6 +73,7 @@ The body of the endpoint (/sendMail) :-
 <code>
  {	"email_type" :"ResetPassword_Email",
  	"subject" :"subject of  ResetPassword Email" ,
+	"receiver" :"receiver"
  	"link": "interwork.biz",
  	"username" :"username" ,
 	"brandname" : "BrandABC"
@@ -77,10 +81,11 @@ The body of the endpoint (/sendMail) :-
 </code>
  </li>
 <li>
- In case of Rejection Email
+ In case of Rejection Emailnnodemon
 <code>
  {	"email_type" :"Rejection_Email",
  	"subject" :" subject of Rejection Email" ,
+	 "receiver" :"receiver"
 	"username" :"username" ,
 	"brandname" : "BrandABC"
  }

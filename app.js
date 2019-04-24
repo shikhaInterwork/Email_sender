@@ -134,10 +134,6 @@ if(count < 4){
 }
 
 
-
-
-
-
 } )
 
 
@@ -147,7 +143,7 @@ sendMail =(req,res)=>{
 
   mailer.sendMail( {
     from: 'Admin name <invitation-do-not-reply@interwork.com> ',
-    to: 'babita@interwork.biz',
+    to: req.body.receiver,
     subject: req.body.subject,
     template: req.body.email_type + '/email',
     context: {
