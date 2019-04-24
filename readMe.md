@@ -73,7 +73,7 @@ The body of the endpoint (/sendMail) :-
 <code>
  {	"email_type" :"ResetPassword_Email",
  	"subject" :"subject of  ResetPassword Email" ,
-	"receiver" :"receiver"
+	"receiver" :"receiver",
  	"link": "interwork.biz",
  	"username" :"username" ,
 	"brandname" : "BrandABC"
@@ -85,7 +85,7 @@ The body of the endpoint (/sendMail) :-
 <code>
  {	"email_type" :"Rejection_Email",
  	"subject" :" subject of Rejection Email" ,
-	 "receiver" :"receiver"
+	 "receiver" :"receiver",
 	"username" :"username" ,
 	"brandname" : "BrandABC"
  }
