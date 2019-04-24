@@ -14,6 +14,7 @@ npm packages used :-
 
 The following are the name of templates :-
 <ol  type="a">
+
  <li> Confirmation_Email </li>
   <li> Invitation_Email  </li>
   <li>  Rejection_Email  </li>
@@ -32,7 +33,7 @@ The body of the endpoint (/sendMail) :-
 
 <li>
  In case of  Welcome Email
-<code>
+```
 {
 	"email_type" :"Welcome_Email",
  	"subject" :"Subject of Welcome Mail" ,
@@ -42,7 +43,7 @@ The body of the endpoint (/sendMail) :-
     "link"      : "interwork.biz"
 
   }
-</code>
+``
  </li>
  <li>
  In case of Invitation Email
