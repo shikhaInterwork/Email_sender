@@ -47,10 +47,11 @@ footer {
 }
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 </head>
 <body>
-<div class="container">
+<div class="container"  style="font-family: 'Poppins', sans-serif;">
 
 <header  style=" background-color: #163caa;
   padding: 30px;
@@ -62,7 +63,7 @@ footer {
 
 <div  style="height: 100%;width: 100%" >
 
-<h1> Hi User,
+<h1> Hi {{username}},
 </h1>
 
 
@@ -75,10 +76,8 @@ A request to reset your ' Brand name ' password has been made. If you did not ma
 If you did make this request, please reset your password by clicking on the below link :
 <br>
 
-<a href="
-https://www.brandname/interwork/resetconfirmation.com/#6Asxljy72Yrjf4
-">
-https://www.brandname/interwork/resetconfirmation.com/#6Asxljy72Yrjf4
+<a href={{link}}>
+{{link}}
 </a>
 
 
@@ -86,7 +85,7 @@ https://www.brandname/interwork/resetconfirmation.com/#6Asxljy72Yrjf4
 <p>
 
 Thank you , <br>
-Team brad name .
+Team {{brandname}}.
 </p>
 
 
@@ -103,7 +102,7 @@ Team brad name .
 
 <div> <br> <br>
 <div style="font-size: 12px; line-height: 18px; color: #555555; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif;">
-<p style="font-size: 14px; line-height: 21px; text-align: center; margin: 0;">If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com  </p>
+<p style="font-size: 12px; line-height: 21px; text-align: center; margin: 0;">If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com  </p>
 
 </div>
 

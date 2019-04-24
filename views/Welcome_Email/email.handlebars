@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: poppins;
+   font-family: 'Poppins', sans-serif;;
 }
 
 /* Style the header */
@@ -46,11 +46,12 @@ footer {
   }
 }
 </style>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 <body>
-<div class="container">
+<div class="container"  style="font-family: 'Poppins', sans-serif;">
 
 <header  style=" background-color: #163caa;
   padding: 30px;
@@ -60,16 +61,16 @@ footer {
  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Ranbaxy_Logo.svg/1920px-Ranbaxy_Logo.svg.png"  height="40px" width="auto" alt="Interwork_logo"   >
 </header>
 
-<div  style="height: 100%;width: 100%" >
-<h1>Dear User ,
+<div  style="height: 100%;width: 100%"   class="container">
+<h1>Dear {{username}} ,
 </h1>
-<p>Welcome to  <span style="color:#163caa" >InterMed</span> . The user ID (or username) of your InterMed account is  <span style="color: red"> user12@brandname.com</span> and password is
-<span style="color: red">  b6F7$g01</span> and this is what you will use to get your  InterMed system setup.   Just follow the below instructions and you'll be up and running in no time.
+<p>Welcome to  <span style="color:#163caa" >InterMed</span> . The user ID (or username) of your InterMed account is  <span style="color: red"> {{username}}</span> and password is
+<span style="color: red"> {{password}} </span> and this is what you will use to get your  InterMed system setup.   Just follow the below instructions and you'll be up and running in no time.
 </p>
 
 <p>
 
-Step 1: Click on this link to open the login page :  https://www.brandname/interwork/loginpage/#  <br>
+Step 1: Click on this link to open the login page : {{link}}  <br>
 Step 2 : Type in your username and password ( as provided above)  <br>
 Step 3 : (Optional) Click on forgot password and follow the guidelines in reset  password mail to set your own password for your InterMed account. <br>
 </p>
@@ -87,8 +88,8 @@ We hope you enjoy using InterMed.
 
 <p>
 
-Sincerely ,
-BrandName
+Sincerely , <br>
+{{brandname}}
 
 </p>
 
@@ -97,7 +98,7 @@ BrandName
 
 
 <footer>
-    <div align="right">
+    <div align="right"  class="container">
             <table><tr><td><b>Powered By</b> </td><td><img src="https://dfm.nrr.mybluehost.me/wp-content/uploads/2018/09/Logo-IW_jpg.jpg" height="30" width="auto" ></td></tr></table>
     </div>
 

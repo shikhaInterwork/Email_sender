@@ -47,10 +47,10 @@ footer {
 }
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 <body>
-<div class="container">
+<div class="container"  style="font-family: 'Poppins', sans-serif;">
 
 <header  style=" background-color: #163caa;
   padding: 30px;
@@ -63,7 +63,7 @@ footer {
 <div  style="height: 100%;width: 100%" >
 
 
-<h2>Hi User </h2>
+<h2>Hi {{username}} </h2>
 <p>
     The details submitted by you on InterMed did not qualify and thus , your registration is  <span style="color: red">Rejected !</span>
 
@@ -73,7 +73,7 @@ Kindly consult your admin in case of any other discrepancies.
 </p>
 <p>
 Thank you, <br>
-Team brand name.
+Team {{brandname}}.
 </p>
 
 </div>

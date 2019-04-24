@@ -1,32 +1,16 @@
- superHeading:'Ranbaxy powered by Intermed' ,
-      subHeading:'kindly click on the link below to register yourself !' ,
-      footerNote:'If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com ' ,
-      link:'interwork.biz'
+// This file contains only the  body req in the sendMail route
+
+ sample reset password link-   https://www.brandname/interwork/resetconfirmation.com/#6Asxljy72Yrjf4
+
+  sample login link -   https://www.brandname/interwork/loginpage/#
 
 
-
-       {
-     "superHeading" :"Ranbaxy powered by Intermed" ,
-      "subHeading":"kindly click on the link below to register yourself !" ,
-      "footerNote":"If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com " ,
-      "link":"interwork.biz"
-
+   {
+	"email_type" :"Rejection_Email",
+ 	"subject" :"Welcome Mail" ,
+  "username":"jim@123",
+	"brandname" : "BrandABC"
     }
 
 
-     {	"subject" :"Invitation " ,
-     "superHeading" :"Ranbaxy powered by Intermed" ,
-      "subHeading":"kindly click on the link below to register yourself !" ,
-      "footerNote":"If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com " ,
-      "link":"interwork.biz"
-
-    }
-
-     {	"subject" :"Invitation " ,
-	"message"  :"Hey there ! Admin (name) invited you to join the  \"Brandname\"  board on Interwork  ",
-     "superHeading" :"Brandname powered by Interwork" ,
-      "subHeading":"kindly click on the link below to register yourself !" ,
-      "footerNote":"If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com " ,
-      "link":"interwork.biz"
-
-    }
+// plz refer to readMe.md

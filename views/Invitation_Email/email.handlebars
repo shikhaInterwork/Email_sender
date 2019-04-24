@@ -4,13 +4,15 @@
 <title>Invitation Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <style>
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Style the header */
@@ -50,7 +52,7 @@ footer {
 
 </head>
 <body>
-<div class="container">
+<div class="container"  style="font-family: 'Poppins', sans-serif;">
 
 <header  style=" background-color: #163caa;
   padding: 30px;
@@ -65,7 +67,7 @@ footer {
 <div align="center" >
 <h2>
      Hey there ! <br>
- Admin (name) invited you to join the "Brand Name " board :
+ {{admin_name}} invited you to join the {{brandname}} board :
 
 </h2> <br>
 <br>
@@ -73,7 +75,7 @@ footer {
 
 </div>
 
-<div style="color:red">
+<div style="color:red;font-family: 'Poppins', sans-serif;font-size:14px"  align="center">
 <p>
 
 InterMed is a platform customized for you to be  able to track your good/items without much hassle.
@@ -92,18 +94,25 @@ So, join InterMed and experience the ease !!!
 </p>
 
 </div>
-<div style="color:#163caa" >
+<div style="color:#163caa;font-size:14px" >
 <p>Kindly Click on the link below to register yourself !
 </p>
 
-<a href="
-https://www.brandname/interwork/registrationpage.com/#6Asxljy72_Yrjf4
-">
-https://www.brandname/interwork/registrationpage.com/#6Asxljy72_Yrjf4
+<a href={{link}}>
+{{link}}
 </a>
 
 </div>
+<div style="font-size:14px" >
 
+<p>
+
+Thank you , <br>
+Team {{brandname}}.
+</p>
+
+
+</div>
 
 
 
@@ -113,7 +122,7 @@ https://www.brandname/interwork/registrationpage.com/#6Asxljy72_Yrjf4
 </div>
 <div>  <br> <br>
 <div style="font-size: 12px; line-height: 18px; color: #555555; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif;">
-<p style="font-size: 14px; line-height: 21px; text-align: center; margin: 0;">If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com  </p>
+<p style="font-size: 12px; line-height: 21px; text-align: center; margin: 0;">If the link above does not work , try copying and pasting the URL into your browser.If you continue to have problems , please feel free to contact us at support@intermedranbaxy.com  </p>
 
 </div>
 
