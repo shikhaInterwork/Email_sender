@@ -1,9 +1,10 @@
-<ul>npm packages used :-</ul>
+npm packages used :-
+<ol  type="a">
 <li>a) nodemailer</li>
 <li>b) nodemailer-express-handlebars </li>
 <li>c) bodyParser </li>
 <li>d) express </li>
-
+</ol>
 
  All the templates are rendered by handlebars template engine  (https://handlebarsjs.com/)
 
