@@ -1,8 +1,8 @@
-npm packages used :-
-a) nodemailer
-b) nodemailer-express-handlebars
-c) bodyParser
-d) express
+<ul>npm packages used :-</ul>
+<li>a) nodemailer</li>
+<li>b) nodemailer-express-handlebars </li>
+<li>c) bodyParser </li>
+<li>d) express </li>
 
 
  All the templates are rendered by handlebars template engine  (https://handlebarsjs.com/)
