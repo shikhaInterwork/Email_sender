@@ -4,7 +4,11 @@ var hbs = require('nodemailer-express-handlebars');
 const express=require('express');
 const app= express();
 const bodyParser=require('body-parser')
+var cors = require('cors');
+//Body Parser middleware
 
+app.options('*', cors());
+app.use(cors());
 
 //Body Parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -134,6 +138,25 @@ if(count < 7){
 }
 
 
+// checking the number of params for Rejection_Email
+else if( req.body.email_type ==='RegistrationSubmission_Email' ){
+
+  console.log(req.body.length)
+
+  let count=Object.keys(req.body).length;
+  if(count < 4){
+    res.send({
+      "success" :false ,
+      "message" :"Insufficient information"
+    })
+  }else{
+    sendMail(req ,res )
+  }
+
+
+  }
+
+
 } )
 
 
@@ -168,6 +191,6 @@ sendMail =(req,res)=>{
 
 
 // app running on port 3000
-app.listen('3000' ,()=>{
-  console.log('app running successfully on port 3000')
+app.listen('4000' ,()=>{
+  console.log('app running successfully on port 4000')
 })
