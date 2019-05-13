@@ -16,6 +16,7 @@ The following are the name of templates :-
  c) Rejection_Email
  d) ResetPassword_Email
  e) Welcome_Email
+ f) RegistrationSubmission_Email
 
  The application is running on port 3000
 
@@ -70,6 +71,16 @@ e) In case of Rejection Email
  	"subject" :"subject of Rejection Email" ,
         "receiver" :"receiver" ,
 	"username" :"username" ,
+	"brandname" : "BrandABC"
+ }
+
+```
+
+f) In case of Registration Submission Email
+```
+ {	"email_type" :"RegistrationSubmission_Email",
+ 	"subject" :"subject of Registration Submission  Email" ,
+        "receiver" :"receiver" ,
 	"brandname" : "BrandABC"
  }
 
